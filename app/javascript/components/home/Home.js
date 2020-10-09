@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Jumbotron from './Jumbotron';
+import Table from './Table/Table';
 
 const Home = () => {
 
@@ -10,11 +12,11 @@ const Home = () => {
     ])
 
     return (
-        <ul>
-            {
-                courseModules.map(course => <li><p>{course.title}</p><p>{course.description}</p></li>)
-            }
-        </ul>
+        <main>
+            <Jumbotron />
+            <Table />
+        </main>
+        
     )
 }
 
